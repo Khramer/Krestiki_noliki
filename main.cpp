@@ -9,27 +9,28 @@ using namespace std;
 
 
 int main(int argc, char** argv) {
+	setlocale(LC_ALL, "Russian");
 	char mas[] = {'-','-','-','-','-','-','-','-','-'};
  int yach =0;
  int igrok=0;
  int otvet=2;
  while(true)
  {
- primer();
-  igrovaya_setka(mas);
+ 	primer();
+  	igrovaya_setka(mas);
 
-  cout<<"1 ili 2 hodit'"<<endl;
-  cin>>igrok;
-  cout<<"Igra nachalas'"<<endl;
+  	cout<<"1 ili 2 hodit'"<<endl;
+  	cin>>igrok;
+  	cout<<"Igra nachalas'"<<endl;
   //Ход ии если игрок ходит 2м
-  if(igrok==2)
-  {
-   mas[rnum()]='O';
-   igrovaya_setka(mas);
-  }
+  	if(igrok==2)
+  	{
+   	mas[rnum()]='O';
+   	igrovaya_setka(mas);
+  	}
   //Общий ход
-  primer();
-  cin>>yach;
+  	primer();
+  	cin>>yach;
   mas[yach-1] = 'X';
   igrovaya_setka(mas);
   ii(mas);

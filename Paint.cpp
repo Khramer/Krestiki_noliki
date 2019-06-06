@@ -9,7 +9,7 @@ void primer()
 	cout<<"-4-|-5-|-6-"  <<endl;
 	cout<<"-7-|-8-|-9-"  <<endl;
 }
-void igrovaya_setka(char* mas)
+void igrovaya_setka(const char* mas)
 {
  	cout<< "\n";
  	cout<<"-"<<mas[0]<<"-|-"<<mas[1]<<"-|-"<<mas[2]<<"-"  <<endl;

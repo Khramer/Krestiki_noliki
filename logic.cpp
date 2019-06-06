@@ -14,147 +14,146 @@ rand_num*=2;
 return rand_num;
 }
 
-int ii(char* mas)
+void ii(char* mas)
 {
 	if(((mas[0]=='X'&& mas[2]=='-'&& mas[6]=='-'&& mas[8]=='-')||
-	   (mas[0]=='-'&& mas[2]=='X'&& mas[6]=='-'&& mas[8]=='-')||
-	   (mas[0]=='-'&& mas[2]=='-'&& mas[6]=='X'&& mas[8]=='-')||
-	   (mas[0]=='-'&& mas[2]=='-'&& mas[6]=='-'&& mas[8]=='X'))&&
-	   (mas[1]=='-'&& mas[3]=='-'&& mas[5]=='-'&& mas[7]=='-'))
-	  {
+	    (mas[0]=='-'&& mas[2]=='X'&& mas[6]=='-'&& mas[8]=='-')||
+	    (mas[0]=='-'&& mas[2]=='-'&& mas[6]=='X'&& mas[8]=='-')||
+	    (mas[0]=='-'&& mas[2]=='-'&& mas[6]=='-'&& mas[8]=='X'))&&
+	    (mas[1]=='-'&& mas[3]=='-'&& mas[5]=='-'&& mas[7]=='-'))
+	    {
 	  
 	
 	      	mas[4]='O';
-		    return 0;
-	     
-	  }
+		    
+	    }
 	
 	else if(mas[0]=='-'&& mas[1]=='O' && mas[2]=='O')
 	{
 		mas[0]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='O'&& mas[1]=='-' && mas[2]=='O')
 	{
 		mas[1]='O';
-		return 0;
+		
 	}
 	else if(mas[0]=='O'&& mas[1]=='O' && mas[2]=='-')
 	{
 		mas[2]='O';
-		return 0;
+		
 	}
 	
 	else if(mas[3]=='-'&& mas[4]=='O' && mas[5]=='O')
 	{
 		mas[3]='O';
-		return 0;
+		
 	}
 	else if(mas[3]=='O'&& mas[4]=='-' && mas[5]=='O')
 	{
 		mas[4]='O';
-		return 0;
+		
 	}
 	else if(mas[3]=='O'&& mas[4]=='O' && mas[5]=='-')
 	{
 		mas[5]='O';
-		return 0;
+		
 	}
 	
 	else if(mas[6]=='-'&& mas[7]=='O' && mas[8]=='O')
 	{
 		mas[6]='O';
-		return 0;
+		
 	}
 	else if(mas[6]=='O'&& mas[7]=='-' && mas[8]=='O')
 	{
 		mas[7]='O';
-		return 0;
+		
 	}
 	else if(mas[6]=='O'&& mas[7]=='O' && mas[8]=='-')
 	{
 		mas[8]='O';
-		return 0;
+		
 	}
 	
 	else if(mas[0]=='-'&& mas[3]=='O' && mas[6]=='O')
 	{
 		mas[0]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='O'&& mas[3]=='-' && mas[6]=='O')
 	{
 		mas[3]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='O'&& mas[3]=='O' && mas[6]=='-')
 	{
 		mas[6]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[1]=='-'&& mas[4]=='O' && mas[7]=='O')
 	{
 		mas[1]='O';
-		return 0;
+	
 	}
 	else if(mas[1]=='O'&& mas[4]=='-' && mas[7]=='O')
 	{
 		mas[4]='O';
-		return 0;
+	
 	}
 	else if(mas[1]=='O'&& mas[4]=='O' && mas[7]=='-')
 	{
 		mas[7]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[2]=='-'&& mas[5]=='O' && mas[8]=='O')
 	{
 		mas[2]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='O'&& mas[5]=='-' && mas[8]=='O')
 	{
 		mas[5]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='O'&& mas[5]=='O' && mas[8]=='-')
 	{
 		mas[8]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[0]=='-'&& mas[4]=='O' && mas[8]=='O')
 	{
 		mas[0]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='O'&& mas[4]=='-' && mas[8]=='O')
 	{
 		mas[4]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='O'&& mas[4]=='O' && mas[8]=='-')
 	{
 		mas[8]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[2]=='-'&& mas[4]=='O' && mas[6]=='O')
 	{
 		mas[2]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='O'&& mas[4]=='-' && mas[6]=='O')
 	{
 		mas[4]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='O'&& mas[4]=='O' && mas[6]=='-')
 	{
 		mas[6]='O';
-		return 0;
+	
 	}
 	
 	
@@ -166,131 +165,133 @@ int ii(char* mas)
 	else if(mas[0]=='-'&& mas[1]=='X' && mas[2]=='X')
 	{
 		mas[0]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='X'&& mas[1]=='-' && mas[2]=='X')
 	{
 		mas[1]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='X'&& mas[1]=='X' && mas[2]=='-')
 	{
 		mas[2]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[3]=='-'&& mas[4]=='X' && mas[5]=='X')
 	{
 		mas[3]='O';
-		return 0;
+	
 	}
 	else if(mas[3]=='X'&& mas[4]=='-' && mas[5]=='X')
 	{
 		mas[4]='O';
-		return 0;
+	
 	}
 	else if(mas[3]=='X'&& mas[4]=='X' && mas[5]=='-')
 	{
 		mas[5]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[6]=='-'&& mas[7]=='X' && mas[8]=='X')
 	{
 		mas[6]='O';
-		return 0;
+	
 	}
 	else if(mas[6]=='X'&& mas[7]=='-' && mas[8]=='X')
 	{
 		mas[7]='O';
-		return 0;
+	
 	}
 	else if(mas[6]=='X'&& mas[7]=='X' && mas[8]=='-')
 	{
 	
 		mas[8]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[0]=='-'&& mas[3]=='X' && mas[6]=='X')
 	{
 		mas[0]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='X'&& mas[3]=='-' && mas[6]=='X')
 	{
 		mas[3]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='X'&& mas[3]=='X' && mas[6]=='-')
 	{
 		mas[6]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[1]=='-'&& mas[4]=='X' && mas[7]=='X')
 	{
 		mas[1]='O';
-		return 0;
+	
 	}
 	else if(mas[1]=='X'&& mas[4]=='-' && mas[7]=='X')
 	{
 		mas[4]='O';
-		return 0;
+	
 	}
 	else if(mas[1]=='X'&& mas[4]=='X' && mas[7]=='-')
 	{
 		mas[7]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[2]=='-'&& mas[5]=='X' && mas[8]=='X')
 	{
 		mas[2]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='X'&& mas[5]=='-' && mas[8]=='X')
 	{
 		mas[5]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='X'&& mas[5]=='X' && mas[8]=='-')
 	{
 		mas[8]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[0]=='-'&& mas[4]=='X' && mas[8]=='X')
 	{
 		mas[0]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='X'&& mas[4]=='-' && mas[8]=='X')
 	{
 		mas[4]='O';
-		return 0;
+	
 	}
 	else if(mas[0]=='X'&& mas[4]=='X' && mas[8]=='-')
 	{
 		mas[8]='O';
-		return 0;
+	
 	}
 	
 	else if(mas[2]=='-'&& mas[4]=='X' && mas[6]=='X')
 	{
 		mas[2]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='X'&& mas[4]=='-' && mas[6]=='X')
 	{
 		mas[4]='O';
-		return 0;
+	
 	}
 	else if(mas[2]=='X'&& mas[4]=='X' && mas[6]=='-')
 	{
 		mas[6]='O';
-		return 0;
+	
 	}
+	else
+	{
     while(true)
     {
 	srand(time(NULL));
@@ -305,7 +306,7 @@ int ii(char* mas)
      if(mas[0]=='-')
 	 {
 	  mas[0]='O';
-	  return 0;	
+	  return ;	
 	 } 
 	 else
 	 {
@@ -315,7 +316,7 @@ int ii(char* mas)
      if(mas[2]=='-')
 	 {
 	  mas[2]='O';
-	  return 0;	
+	  return ;	
 	 }
 	 else
 	 {
@@ -325,7 +326,7 @@ int ii(char* mas)
      if(mas[6]=='-')
 	 {
 	  mas[6]='O';
-	  return 0;	
+	  return ;	
 	 }
 	 else
 	 {
@@ -335,7 +336,7 @@ int ii(char* mas)
      if(mas[8]=='-')
 	 {
 	  mas[8]='O';
-	  return 0;	
+	  return ;	
 	 }
 	 else
 	 {
@@ -343,11 +344,12 @@ int ii(char* mas)
 	 };
     }
 }
+}
 	
 	
 }
 
-bool proverka_na_pobedu_x(char* mas)
+bool proverka_na_pobedu_x(const char* mas)
 {
 	if(
 	mas[0]=='X'&&mas[3]=='X'&&mas[6]=='X'||
@@ -366,7 +368,7 @@ bool proverka_na_pobedu_x(char* mas)
 	return false;
 }
 
-bool proverka_na_pobedu_o(char* mas)
+bool proverka_na_pobedu_o(const char* mas)
 {
 	if(
 	mas[0]=='O'&&mas[3]=='O'&&mas[6]=='O'||
