@@ -16,5 +16,4 @@ void igrovaya_setka(const char* mas)
 	cout<<"-"<<mas[3]<<"-|-"<<mas[4]<<"-|-"<<mas[5]<<"-"  <<endl;
 	cout<<"-"<<mas[6]<<"-|-"<<mas[7]<<"-|-"<<mas[8]<<"-"  <<endl;
 	cout<<"\n";
- 
 }
